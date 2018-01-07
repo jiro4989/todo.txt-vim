@@ -22,11 +22,15 @@ function! s:remove_priority()
 endfunction
 
 function! s:get_current_date()
+    return strftime('%Y-%m-%d')
+endfunction
+
+function! s:get_current_datetime()
     return strftime('%Y-%m-%d %H:%M:%S')
 endfunction
 
 function! todo#txt#prepend_date()
-    execute 'normal! I' . s:get_current_date() . ' '
+    execute 'normal! I' . s:get_current_datetime() . ' '
 endfunction
 
 function! todo#txt#replace_date()
