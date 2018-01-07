@@ -116,7 +116,7 @@ function! todo#txt#prioritize_add(priority)
 endfunction
 
 function! todo#txt#prioritize_add_action(priority)
-    execute 's/^\(([a-zA-Z]) \)\?/(' . a:priority . ') /'
+    execute 's/^\(([a-zA-Z]) \)\?/(' . a:priority . ') ' . strftime("%Y-%m-%d") . ' /'
 endfunction
 
 " Modeline {{{1
