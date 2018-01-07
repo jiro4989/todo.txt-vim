@@ -44,3 +44,13 @@ This plugin detects any text file with the name todo.txt or done.txt with an opt
 
 If you want the help installed, run ":helptags ~/.vim/doc" inside vim after having copied the files.
 Then you will be able to get the commands help with: `:h todo.txt`.
+
+---
+
+### Fork元との変更点
+
+下記2つのコマンドで入力される日付の書式に現在時刻も含めるように変更。
+
+- `<localleader>d`
+- `date<tab>`
+

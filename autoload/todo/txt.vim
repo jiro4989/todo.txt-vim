@@ -22,7 +22,7 @@ function! s:remove_priority()
 endfunction
 
 function! s:get_current_date()
-    return strftime('%Y-%m-%d')
+    return strftime('%Y-%m-%d %H:%M:%S')
 endfunction
 
 function! todo#txt#prepend_date()
